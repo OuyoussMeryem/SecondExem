@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Annotation profile for command-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="product-service" />
+        <module name="command-service" />
+      </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="scovery-service" />
+        <module name="config-service" />
+        <module name="notification-service" />
+        <module name="gateway-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="command-service" target="17" />
+      <module name="config-service" target="17" />
+      <module name="gateway-service" target="17" />
+      <module name="notification-service" target="17" />
+      <module name="product-service" target="17" />
+      <module name="scovery-service" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="command-service" options="-parameters" />
+      <module name="config-service" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
+      <module name="notification-service" options="-parameters" />
+      <module name="product-service" options="-parameters" />
+      <module name="scovery-service" options="-parameters" />
+    </option>
+  </component>
+</project>
